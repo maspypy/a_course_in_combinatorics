@@ -1,1 +1,13 @@
 \subsection{}
+$V(G)=\mathbb{F}_{16}$ とする。$\mathbb{F}_{16}^*$ の生成元 $\alpha$ を取る。$G$ の辺の3色彩色 $f:E(G)\to \mathbb{Z}/3\mathbb{Z}$ を次で定める。
+
+\begin{align*}
+i-j = \alpha ^ n \text{ であるとき、 } f(\{i,j\}) = n \bmod 3
+\end{align*}
+（これはwell-definedであることに注意する）
+
+この彩色が単色三角形を含まないことを背理法により示す。単色三角形ができたとし、その頂点を $i,j,k$ とする。等式 $k-i=(j-i)+(k-j)$ を定数倍することで
+\begin{align*}
+\alpha^6+\alpha^3+1=0 \text{ または } \alpha^9+\alpha^3+1=0
+\end{align*}
+が成り立つことがわかる。したがって$\mathbb{F}_2(\alpha^3)/\mathbb{F}_{2}$ の拡大次数は1,2,3,6のいずれかとなる。しかし、$\mathbb{F}_2(\alpha^3)$ は $\mathbb{F}_{16}$ の部分体であって、少なくとも6つの元 $\{0,1,\alpha^3,\alpha^6,\alpha^9,\alpha^{12}\}$ をもつことから、$\mathbb{F}_2(\alpha^3)=\mathbb{F}_{16}$であり、 $\mathbb{F}_{16}/\mathbb{F}_{2}$ の拡大次数は4であるので矛盾。
