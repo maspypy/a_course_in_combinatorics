@@ -1,1 +1,18 @@
 \subsection{}
+まず辺 $a=\{x,y\}$ を含む三角形を下から評価する．
+$A = \Gamma(x)\setminus y$, $B=\Gamma(x)\setminus y$ とする．$|A| = \deg(x) - 1$, $|B| = \deg(y) - 1$, $A,B\subset G\setminus\{x,y\}$ である．
+よって $|A\cap B| = |A| + |B| - |A\cup B| \geq (\deg(x)-1) + (\deg(y)-1) - (n-2) = \deg(x) + \deg(y) - n$ である．
+特に辺 $a$ を含む三角形は $\deg(x) + \deg(y) - n$ 個以上存在する．
+
+辺 $e$ と三角形 $T$ の組 $(e,T)$ であって，$e\subset T$ となるものの個数を $2$ 通りに数える．
+まず $T$ から $e$ を数えることで，個数は $3\Delta$ （ただし $\Delta$ は三角形の個数）．
+また上で示したことを使って $e$ から $T$ を数えることで，個数は
+$\sum_{a=xy}(\deg(x)+\deg(y)-n)$ 以上．したがって
+\[
+ \Delta\geq \frac13\sum_{a=xy}(\deg(x)+\deg(y)-n)
+\]
+が分かる．
+
+この右辺は $\frac13\sum_{a=xy}(\deg(x)+\deg(y)-n)=\frac13\bigl(\sum_x \deg(x)^2 - n^2)$ と評価できる．
+さらに握手補題とコーシー・シュワルツの不等式より
+$\sum_x \deg(x)^2 \leq \frac1n (\sum_x\deg(x))^2 = \frac{(2e)^2}{n}$ であり，これらを合わせて主張の不等式を得る．
