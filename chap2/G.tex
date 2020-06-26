@@ -1,1 +1,11 @@
 \subsection{}
+次数 $n\geq 2$ の頂点を $v_n$ と書く．
+$A = \{v_n\mid n > \frac{m}{2}\}$ とする．頂点と辺の組 $(v,e)$ であって，$v\in A$ となるものの個数 $X$ を数える．
+
+$v$ から $e$ を数えることで，$X = \sum_{v\in A} \deg(v)$．
+$e=vw$ のうちで $v,w\in A$ であるものが，高々 $|A|(|A|-1)$ 個．
+$e=vw$ のうちで，$w\notin A$ であるものが，高々 $\sum_{v\notin A}\deg(v)$ 個．よって
+\[
+ \sum_{v\in A}\deg(v) = X \leq |A|(|A|-1) + \sum_{v\notin A}\deg(v)
+\]
+が成り立つ．式変形すれば主張を得る．
