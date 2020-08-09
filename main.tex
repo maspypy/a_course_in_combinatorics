@@ -1,5 +1,5 @@
 \documentclass{jarticle}
-\usepackage{amsmath, amssymb}
+\usepackage{amsmath, amssymb, ascmac}
 \usepackage[dvipdfmx]{graphicx}
 
 \title{組合せ論（ヴァン・リント＆ウィルソン） 問題}
@@ -10,7 +10,7 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\F}{\mathbb{F}}
-
+\DeclareMathOperator{\Ker}{Ker}
 \newcommand{\comb}[2]{{}_{#1}\mathrm{C}_{#2}}
 
 \renewcommand{\labelenumi}{(\roman{enumi})}
@@ -93,6 +93,24 @@
 \input{chap6/C.tex}
 \input{chap6/D.tex}
 \input{chap6/E.tex}
+
+\newpage
+
+\section{ネットワークフロー}
+\input{chap7/A.tex}
+\input{chap7/B.tex}
+\input{chap7/C.tex}
+\input{chap7/D.tex}
+\input{chap7/E.tex}
+\input{chap7/F.tex}
+
+\newpage
+
+\section{De Bruijn 系列}
+\input{chap8/A.tex}
+\input{chap8/B.tex}
+\input{chap8/C.tex}
+\input{chap8/D.tex}
 
 
 \end{document}
