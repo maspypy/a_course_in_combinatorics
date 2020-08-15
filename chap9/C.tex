@@ -9,17 +9,17 @@ $$\sum_{j=0}^{N-1} c_{ij}\xi^{kj} = \xi^{mk} \xi^{kj}$$
 頂点数$N$ (奇数)の多角形の距離行列は$\sum_{m=1}^n m(C_m+C_{-m})$と表されるから、$\bm{a}_k$は距離行列の一次独立な固有ベクトルでもある。$k\neq 0$のとき$\bm{a}_k$の固有値は
 
 \begin{align*}
- \sum_{m=1}^{N-1} i(\xi^{km}+\xi^{-km})
-=& \left.\frac{\partial}{\partial x} \frac{1}{1-x}\right|_{x=\xi^k}+\left.\frac{\partial}{\partial x} \frac{1}{1-x}\right|_{x=\xi^{-k}}\\
-=& \frac{1}{(1-\xi^k)^2}+\frac{1}{(1-\xi^{-k})^2}\\
-=& \frac{\xi^{-2k}+\xi^{2k}-2\xi^{-k}-2\xi^{k}}{(2-\xi^k-\xi^{-k})^2}\\
-=& \frac{2\cos\left(2\pi \frac{2k}{N}\right)-4\cos\left(2\pi \frac{k}{N}\right)}{\left(2-2\cos\left(2\pi \frac{k}{N}\right)\right)^2}\\
+  \sum_{m=1}^{N-1} i(\xi^{km}+\xi^{-km})
+  =& \left.\frac{\partial}{\partial x} \frac{1}{1-x}\right|_{x=\xi^k}+\left.\frac{\partial}{\partial x} \frac{1}{1-x}\right|_{x=\xi^{-k}}\\
+  =& \frac{1}{(1-\xi^k)^2}+\frac{1}{(1-\xi^{-k})^2}\\
+  =& \frac{\xi^{-2k}+\xi^{2k}-2\xi^{-k}-2\xi^{k}}{(2-\xi^k-\xi^{-k})^2}\\
+  =& \frac{2\cos\left(2\pi \frac{2k}{N}\right)-4\cos\left(2\pi \frac{k}{N}\right)}{\left(2-2\cos\left(2\pi \frac{k}{N}\right)\right)^2}\\
 \end{align*}
-となる。$0<|\cos\left(2\pi \frac{m}{N}\right)|<1$より
+となる。$0<|\cos\left(2\pi \frac{k}{N}\right)|<1$より
 \begin{align*}
-2\cos\left(2\pi \frac{2m}{N}\right)-4\cos\left(2\pi \frac{m}{N}\right)
-=&4\cos^2\left(2\pi \frac{m}{N}\right)-4\cos\left(2\pi \frac{m}{N}\right)-2\\
-=&4\left(\cos\left(2\pi \frac{m}{N}\right)-\frac{1}{2}\right)^2-1\\
-< &0\\
+  2\cos\left(2\pi \frac{2k}{N}\right)-4\cos\left(2\pi \frac{k}{N}\right)
+  =&4\cos^2\left(2\pi \frac{k}{N}\right)-4\cos\left(2\pi \frac{k}{N}\right)-2\\
+  =&4\left(\cos\left(2\pi \frac{k}{N}\right)-\frac{1}{2}\right)^2-1\\
+  < &0\\
 \end{align*}
 であるから$a_{1},a_{2},\ldots,a_{N-1}$に対応する固有値は全て負である。一方$a_0$の固有値は$2\sum_{i=1}^n i$であるから正である。よって定理9.1と定理9.6より$N(P_{2n})=2n$である。
